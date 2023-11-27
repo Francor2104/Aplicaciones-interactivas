@@ -16,6 +16,7 @@ const LoginForm = () => {
       });
       const access = response.data.access;
       localStorage.setItem("accessToken", access);
+      location.reload()
     } catch (error) {
       console.log(error);
     }
